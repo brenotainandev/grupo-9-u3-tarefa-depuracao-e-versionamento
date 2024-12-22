@@ -79,6 +79,4 @@ grupo-9-u3-tarefa-depuracao-e-versionamento/
 
 O programa permite converter unidades de massa (quilogramas, gramas, toneladas). O fluxo do programa é simples e interativo:
 1. O usuário escolhe a opção para converter unidades de massa.
-2. Insere o valor em quilogramas.
-3. O programa exibe o valor convertido para gramas e toneladas.
 
