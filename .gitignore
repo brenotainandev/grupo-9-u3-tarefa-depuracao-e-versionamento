@@ -24,17 +24,6 @@
 
 # Shared objects (inc. Windows DLLs)
 *.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
 
 # Debug files
 *.dSYM/
@@ -53,3 +42,7 @@ dkms.conf
 
 # Ignore VSCode settings
 .vscode/
+
+# Ignore build and output directories
+build/
+output/
