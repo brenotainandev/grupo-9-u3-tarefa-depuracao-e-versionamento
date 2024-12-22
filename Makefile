@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Iinclude
-SRC = src/main.c src/massa.c
+SRC = src/main.c src/unidade-de-massa.c
 OBJ = main
 OUTPUT_DIR = output
 

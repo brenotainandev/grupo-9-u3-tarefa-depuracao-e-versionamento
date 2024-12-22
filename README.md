@@ -3,19 +3,19 @@
 ```plaintext
 grupo-9-u3-tarefa-depuracao-e-versionamento/
 │
-├── include/              # Diretório para arquivos de cabeçalho (.h)
-│   ├── massa.h           # Declarações das funções de conversão de massa
+├── include/                     # Diretório para arquivos de cabeçalho (.h)
+│   ├── unidade-de-massa.h       # Declarações das funções de conversão de massa
 │
-├── src/                  # Diretório para arquivos de código-fonte (.c)
-│   ├── main.c            # Arquivo principal que contém a lógica do menu e execução
-│   ├── massa.c           # Implementação das funções de conversão de massa
+├── src/                         # Diretório para arquivos de código-fonte (.c)
+│   ├── main.c                   # Arquivo principal que contém a lógica do menu e execução
+│   ├── unidade-de-massa.c       # Implementação das funções de conversão de massa
 │
-├── output/               # Diretório para o executável gerado pelo Makefile
-│   └── main              # Arquivo executável gerado após a compilação
+├── output/                      # Diretório para o executável gerado pelo Makefile
+│   └── main                     # Arquivo executável gerado após a compilação
 │
-├── Makefile              # Arquivo de automação para compilação
-├── README.md             # Documentação do projeto
-└── .gitignore            # Lista de arquivos e pastas ignorados pelo Git
+├── Makefile                     # Arquivo de automação para compilação
+├── README.md                    # Documentação do projeto
+└── .gitignore                   # Lista de arquivos e pastas ignorados pelo Git
 ```
 
 ---
@@ -28,7 +28,7 @@ grupo-9-u3-tarefa-depuracao-e-versionamento/
 - **`src/`**  
   Contém os arquivos de código-fonte (`.c`) que implementam as funcionalidades do projeto. 
   - `main.c`: Arquivo principal que inicializa o programa e exibe o menu de opções. 
-  - `massa.c`: Contém as funções para conversão de unidades de massa.
+  - `unidade-de-massa.c`: Contém as funções para conversão de unidades de massa.
 
 - **`output/`**  
   Diretório onde o executável gerado pelo `Makefile` será armazenado. O programa pode ser executado diretamente deste diretório.
