@@ -10,6 +10,8 @@ grupo-9-u3-tarefa-depuracao-e-versionamento/
 │   ├── main.c                   # Arquivo principal que contém a lógica do menu e execução
 │   ├── unidade-de-massa.c       # Implementação das funções de conversão de massa
 │
+├── build/                       # Diretório para arquivos objeto (.o) intermediários
+│
 ├── output/                      # Diretório para o executável gerado pelo Makefile
 │   └── main                     # Arquivo executável gerado após a compilação
 │
@@ -26,15 +28,18 @@ grupo-9-u3-tarefa-depuracao-e-versionamento/
   Contém os arquivos de cabeçalho (`.h`) do projeto. Estes arquivos são responsáveis por declarar funções e expor interfaces que serão usadas nos arquivos `.c`.
 
 - **`src/`**  
-  Contém os arquivos de código-fonte (`.c`) que implementam as funcionalidades do projeto. 
-  - `main.c`: Arquivo principal que inicializa o programa e exibe o menu de opções. 
+  Contém os arquivos de código-fonte (`.c`) que implementam as funcionalidades do projeto.
+  - `main.c`: Arquivo principal que inicializa o programa e exibe o menu de opções.
   - `unidade-de-massa.c`: Contém as funções para conversão de unidades de massa.
+
+- **`build/`**  
+  Diretório para armazenar os arquivos objeto (`.o`) gerados durante o processo de compilação. Esses arquivos intermediários permitem recompilação eficiente.
 
 - **`output/`**  
   Diretório onde o executável gerado pelo `Makefile` será armazenado. O programa pode ser executado diretamente deste diretório.
 
 - **`Makefile`**  
-  Automatiza o processo de compilação do projeto. Ele compila os arquivos `.c` em um executável dentro do diretório `output/`.
+  Automatiza o processo de compilação do projeto. Ele gerencia a criação de arquivos objeto, a geração do executável e a limpeza de arquivos temporários. Também é compatível tanto para sistemas Linux quanto Windows.
 
 - **`README.md`**  
   Documentação do projeto. Inclui a descrição do objetivo, instruções de uso, e informações sobre a estrutura do projeto.
@@ -57,6 +62,10 @@ grupo-9-u3-tarefa-depuracao-e-versionamento/
    ```bash
    ./output/main
    ```
+   *No Windows, se o executável for gerado com a extensão `.exe`, use:*
+   ```cmd
+   .\output\main.exe
+   ```
 
 3. **Limpar Arquivos de Compilação**  
    Para remover os arquivos temporários gerados durante a compilação:
@@ -72,3 +81,4 @@ O programa permite converter unidades de massa (quilogramas, gramas, toneladas).
 1. O usuário escolhe a opção para converter unidades de massa.
 2. Insere o valor em quilogramas.
 3. O programa exibe o valor convertido para gramas e toneladas.
+
