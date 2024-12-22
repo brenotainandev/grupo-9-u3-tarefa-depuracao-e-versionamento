@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "massa.h": "c",
+    "stdio.h": "c"
+  }
+}
