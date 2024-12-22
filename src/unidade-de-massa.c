@@ -24,6 +24,11 @@ void converterMassa() {
             scanf("%lf", &valor);
             printf("%.2lf kg equivalem a %.2lf toneladas\n", valor, valor / 1000);
             break;
+        case 3:
+            printf("Digite o valor em gramas: ");
+            scanf("%lf", &valor);
+            printf("%.2lf g equivalem a %.2lf kg\n", valor, valor / 1000);
+            break;
         default:
             printf("Opção inválida.\n");
     }
