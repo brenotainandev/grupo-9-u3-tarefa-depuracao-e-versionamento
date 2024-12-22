@@ -12,7 +12,7 @@ int main() {
         scanf("%d", &opcao);
 
         switch (opcao) {
-            case 1:
+            case 2:
                 converterMassa();
                 break;
             case 0:
@@ -28,6 +28,6 @@ int main() {
 
 void exibirMenu() {
     printf("\n--- Conversor de Unidades ---\n");
-    printf("1. Converter Massa\n");
+    printf("2. Converter Massa\n");
     printf("0. Sair\n");
 }
