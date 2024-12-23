@@ -15,6 +15,9 @@ int main() {
             case 2:
                 converterMassa();
                 break;
+            case 7:
+                converterArea();
+                break;
             case 0:
                 printf("Saindo do programa.\n");
                 return 0;
@@ -29,5 +32,6 @@ int main() {
 void exibirMenu() {
     printf("\n--- Conversor de Unidades ---\n");
     printf("2. Converter Massa\n");
+    printf("7. Converter Área\n");
     printf("0. Sair\n");
 }

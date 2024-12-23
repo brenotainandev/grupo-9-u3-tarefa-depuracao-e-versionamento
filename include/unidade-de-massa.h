@@ -2,5 +2,6 @@
 #define UNIDADE_DE_MASSA_H
 
 void converterMassa();
+void converterArea();
 
 #endif
