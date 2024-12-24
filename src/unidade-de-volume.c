@@ -18,7 +18,7 @@ void converterVolume()
     {
     case 1:
         printf("DIGITE O VALOR DA ENTRADA EM Litros : ");
-        scanf("%F", &InputValue);
+        scanf("%f", &InputValue);
         printf("ESCOLHA QUAL UNIDADE DE SAÍDA\n");
         printf("[1] MiliLitros \n[2] MetrosCubicos\n");
         scanf("%d", &SelectOutputUnits);
@@ -41,7 +41,7 @@ void converterVolume()
 
     case 2:
         printf("DIGITE O VALOR DA ENTRADA EM MiliLitros: ");
-        scanf("%F", &InputValue);
+        scanf("%f", &InputValue);
         printf("ESCOLHA QUAL UNIDADE DE SAÍDA\n");
         printf("[1] Litros \n[2] MetrosCubicos\n");
         scanf("%d", &SelectOutputUnits);
@@ -63,8 +63,8 @@ void converterVolume()
         break;
 
     case 3:
-        printf("DIGITE O VALOR DA ENTRADA EM MetrosCubicos: ");
-        scanf("%F", &InputValue);
+        printf("DIGITE O VALOR DA ENTRADA EM Metros Cubicos: ");
+        scanf("%f", &InputValue);
         printf("ESCOLHA QUAL UNIDADE DE SAIDA\n");
         printf("[1] Litros \n[2] MiliLitros\n");
         scanf("%d", &SelectOutputUnits);

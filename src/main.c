@@ -2,6 +2,7 @@
 #include "unidade-de-massa.h"
 #include "unidade-de-velocidade.h"
 #include "unidade-de-volume.h"
+#include "unidade-de-area.h"
 
 void exibirMenu();
 void limparBufferEntrada();
@@ -25,12 +26,15 @@ int main()
         {
         case 2:
             converterMassa();
-            break;
+            break; 
         case 3:
             converterVolume();
             break;
         case 5:
             converterVelocidade();
+            break;
+        case 7:
+            converterArea();
             break;
         case 0:
             printf("Saindo do programa.\n");
@@ -49,6 +53,7 @@ void exibirMenu()
     printf("2. Converter Massa\n");
     printf("3. Converter Volume\n");
     printf("5. Converter Velocidade\n");
+    printf("7. Converter Área\n");
     printf("0. Sair\n");
 }
 
