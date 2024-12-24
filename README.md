@@ -45,10 +45,12 @@ grupo-9-u3-tarefa-depuracao-e-versionamento/
 │
 ├── include/                     # Diretório para arquivos de cabeçalho (.h)
 │   ├── unidade-de-massa.h       # Declarações das funções de conversão de massa
+│   ├── unidade-de-velcidade.h   # Declarações das funções de velocidade
 │
 ├── src/                         # Diretório para arquivos de código-fonte (.c)
 │   ├── main.c                   # Arquivo principal que contém a lógica do menu e execução
 │   ├── unidade-de-massa.c       # Implementação das funções de conversão de massa
+|   ├── unidade-de-velocidade.c  # Implementação das funções de conversão de velocidade
 │
 ├── build/                       # Diretório para arquivos objeto (.o) intermediários
 │

@@ -17,10 +17,10 @@ void converterVelocidade()
     switch (SelectInputUnits)
     {
     case 1:
-        printf("DIGITE O VALOR DA ENTRADA: ");
+        printf("DIGITE O VALOR DA ENTRADA EM km/h: ");
         scanf("%F", &InputValue);
         printf("ESCOLHA QUAL UNIDADE DE SAÍDA\n");
-        printf("[1] m/s \n[2] mph");
+        printf("[1] m/s \n[2] mph\n");
         scanf("%d", &SelectOutputUnits);
 
         if (SelectOutputUnits == 1)
@@ -40,7 +40,7 @@ void converterVelocidade()
         break;
 
     case 2:
-        printf("DIGITE O VALOR DA ENTRADA: ");
+        printf("DIGITE O VALOR DA ENTRADA EM m/s: ");
         scanf("%F", &InputValue);
         printf("ESCOLHA QUAL UNIDADE DE SAÍDA\n");
         printf("[1] km/h \n[2] mph\n");
@@ -63,7 +63,7 @@ void converterVelocidade()
         break;
 
     case 3:
-        printf("DIGITE O VALOR DA ENTRADA: ");
+        printf("DIGITE O VALOR DA ENTRADA EM MPH: ");
         scanf("%F", &InputValue);
         printf("ESCOLHA QUAL UNIDADE DE SAIDA\n");
         printf("[1] m/s \n[2] km/h\n");
