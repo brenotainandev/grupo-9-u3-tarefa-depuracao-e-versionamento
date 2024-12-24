@@ -21,13 +21,11 @@ int main() {
             case 2:
                 converterMassa();
                 break;
-<<<<<<< HEAD
-            case 7:
-                converterArea();
-=======
             case 5:
                 converterVelocidade();
->>>>>>> 93fc4ac74037308cbd4d518a165fbbaae873903d
+                break;
+            case 7:
+                converterArea();
                 break;
             case 0:
                 printf("Saindo do programa.\n");
@@ -43,11 +41,8 @@ int main() {
 void exibirMenu() {
     printf("\n--- Conversor de Unidades ---\n");
     printf("2. Converter Massa\n");
-<<<<<<< HEAD
-    printf("7. Converter Área\n");
-=======
     printf("5. Converter Velocidade\n");
->>>>>>> 93fc4ac74037308cbd4d518a165fbbaae873903d
+    printf("7. Converter Área\n");
     printf("0. Sair\n");
 }
 
