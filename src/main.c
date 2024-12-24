@@ -2,6 +2,7 @@
 #include "unidade-de-massa.h"
 #include "unidade-de-velocidade.h"
 #include "unidade-de-volume.h"
+#include "unidade-de-area.h"
 
 void exibirMenu();
 void limparBufferEntrada();

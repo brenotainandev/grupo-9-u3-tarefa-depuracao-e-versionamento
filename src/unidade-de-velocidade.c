@@ -18,7 +18,7 @@ void converterVelocidade()
     {
     case 1:
         printf("DIGITE O VALOR DA ENTRADA EM km/h: ");
-        scanf("%F", &InputValue);
+        scanf("%f", &InputValue);
         printf("ESCOLHA QUAL UNIDADE DE SAÍDA\n");
         printf("[1] m/s \n[2] mph\n");
         scanf("%d", &SelectOutputUnits);
@@ -41,7 +41,7 @@ void converterVelocidade()
 
     case 2:
         printf("DIGITE O VALOR DA ENTRADA EM m/s: ");
-        scanf("%F", &InputValue);
+        scanf("%f", &InputValue);
         printf("ESCOLHA QUAL UNIDADE DE SAÍDA\n");
         printf("[1] km/h \n[2] mph\n");
         scanf("%d", &SelectOutputUnits);
@@ -64,7 +64,7 @@ void converterVelocidade()
 
     case 3:
         printf("DIGITE O VALOR DA ENTRADA EM MPH: ");
-        scanf("%F", &InputValue);
+        scanf("%f", &InputValue);
         printf("ESCOLHA QUAL UNIDADE DE SAIDA\n");
         printf("[1] m/s \n[2] km/h\n");
         scanf("%d", &SelectOutputUnits);
