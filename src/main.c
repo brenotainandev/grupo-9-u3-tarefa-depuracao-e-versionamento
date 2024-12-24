@@ -3,6 +3,7 @@
 #include "unidade-de-velocidade.h"
 #include "unidade-de-volume.h"
 #include "unidade-de-area.h"
+#include "unidade-de-temperatura.h"
 
 void exibirMenu();
 void limparBufferEntrada();
@@ -29,6 +30,9 @@ int main()
             break; 
         case 3:
             converterVolume();
+            break;
+        case 4:
+            converterTemperatura();
             break;
         case 5:
             converterVelocidade();
