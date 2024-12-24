@@ -1,7 +1,7 @@
 # Variáveis de configuração
 CC = gcc
 CFLAGS = -Wall -Wextra -Iinclude
-SRC = src/main.c src/unidade-de-massa.c
+SRC = src/main.c src/unidade-de-massa.c scr/unidade-de-velocidade.c
 OBJ = $(SRC:src/%.c=build/%.o)
 OUTPUT_DIR = output
 TARGET = $(OUTPUT_DIR)/main

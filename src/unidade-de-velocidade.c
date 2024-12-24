@@ -1,8 +1,9 @@
 // Unidades de velocidade
 // Conversão km/h, m/s, mph
 #include <stdio.h>
+#include "unidade-de-velocidade.h"
 
-int main()
+void converterVelocidade()
 {
     int SelectInputUnits;
     int SelectOutputUnits;
