@@ -6,9 +6,6 @@ OBJ = $(SRC:src/%.c=build/%.o)
 OUTPUT_DIR = output
 TARGET = $(OUTPUT_DIR)/main
 
-# Detectar sistema operacional
-OS := $(shell uname -s)
-
 # Comandos compatíveis para criação e remoção de diretórios
 ifeq ($(OS), Windows_NT)
     MKDIR = if not exist $(subst /,\\,$(1)) mkdir $(subst /,\\,$(1))
