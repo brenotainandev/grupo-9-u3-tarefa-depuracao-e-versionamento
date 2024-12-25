@@ -56,6 +56,7 @@ void exibirMenu()
     printf("\n--- Conversor de Unidades ---\n");
     printf("2. Converter Massa\n");
     printf("3. Converter Volume\n");
+    printf("4. Converter Temperatura\n");
     printf("5. Converter Velocidade\n");
     printf("7. Converter Área\n");
     printf("0. Sair\n");
