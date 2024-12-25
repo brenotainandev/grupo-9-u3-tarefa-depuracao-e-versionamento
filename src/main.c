@@ -1,9 +1,10 @@
 #include <stdio.h>
-#include "../include/unidade-de-comprimento.h"
-#include "../include/unidade-de-massa.h"
-#include "../include/unidade-de-velocidade.h"
-#include "../include/unidade-de-volume.h"
-#include "../include/unidade-de-area.h"
+#include "unidade-de-comprimento.h"
+#include "unidade-de-massa.h"
+#include "unidade-de-velocidade.h"
+#include "unidade-de-volume.h"
+#include "unidade-de-area.h"
+#include "unidade-de-temperatura.h"
 
 void exibirMenu();
 void limparBufferEntrada();
@@ -34,6 +35,9 @@ int main()
         case 3:
             converterVolume();
             break;
+        case 4:
+            converterTemperatura();
+            break;
         case 5:
             converterVelocidade();
             break;
@@ -57,6 +61,7 @@ void exibirMenu()
     printf("1. Converter Comprimento\n");
     printf("2. Converter Massa\n");
     printf("3. Converter Volume\n");
+    printf("4. Converter Temperatura\n");
     printf("5. Converter Velocidade\n");
     printf("7. Converter Area\n");
     printf("0. Sair\n");
