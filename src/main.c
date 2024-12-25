@@ -3,6 +3,7 @@
 #include "unidade-de-velocidade.h"
 #include "unidade-de-volume.h"
 #include "unidade-de-area.h"
+#include "unidade-de-temperatura.h"
 
 void exibirMenu();
 void limparBufferEntrada();
@@ -30,6 +31,9 @@ int main()
         case 3:
             converterVolume();
             break;
+        case 4:
+            converterTemperatura();
+            break;
         case 5:
             converterVelocidade();
             break;
@@ -52,6 +56,7 @@ void exibirMenu()
     printf("\n--- Conversor de Unidades ---\n");
     printf("2. Converter Massa\n");
     printf("3. Converter Volume\n");
+    printf("4. Converter Temperatura\n");
     printf("5. Converter Velocidade\n");
     printf("7. Converter Área\n");
     printf("0. Sair\n");
