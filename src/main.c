@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "unidade-de-comprimento.h"
 #include "unidade-de-massa.h"
 #include "unidade-de-velocidade.h"
 #include "unidade-de-volume.h"
@@ -15,19 +16,22 @@ int main()
     while (1)
     {
         exibirMenu();
-        printf("Escolha uma opção: ");
+        printf("Escolha uma unidade: ");
         if (scanf("%d", &opcao) != 1)
         {
-            printf("Entrada inválida. Tente novamente.\n");
+            printf("Entrada incoerente. Tente novamente.\n");
             limparBufferEntrada();
             continue;
         }
 
         switch (opcao)
         {
+        case 1:
+            converterComprimento();
+            break;
         case 2:
             converterMassa();
-            break; 
+            break;
         case 3:
             converterVolume();
             break;
@@ -44,7 +48,7 @@ int main()
             printf("Saindo do programa.\n");
             return 0;
         default:
-            printf("Opção inválida. Tente novamente.\n");
+            printf("Unidade incoerente. Tente novamente.\n");
         }
     }
 
@@ -54,18 +58,20 @@ int main()
 void exibirMenu()
 {
     printf("\n--- Conversor de Unidades ---\n");
+    printf("1. Converter Comprimento\n");
     printf("2. Converter Massa\n");
     printf("3. Converter Volume\n");
     printf("4. Converter Temperatura\n");
     printf("5. Converter Velocidade\n");
-    printf("7. Converter Área\n");
+    printf("7. Converter Area\n");
     printf("0. Sair\n");
 }
 
 void limparBufferEntrada()
 {
     int c;
-    while ((c = getchar()) != '\n' && c != EOF)
+    do
     {
-    }
+        c = getchar();
+    } while (c != '\n' && c != EOF);
 }
