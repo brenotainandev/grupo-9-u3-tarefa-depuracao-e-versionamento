@@ -71,6 +71,7 @@ void exibirMenu()
     printf("3. Converter Volume\n");
     printf("4. Converter Temperatura\n");
     printf("5. Converter Velocidade\n");
+    printf("6. Converter Potência\n");
     printf("7. Converter Area\n");
     printf("8. Converter Tempo\n");
     printf("0. Sair\n");
