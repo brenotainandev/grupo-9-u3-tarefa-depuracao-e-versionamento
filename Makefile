@@ -1,10 +1,13 @@
 # Variáveis de configuração
 CC = gcc
 CFLAGS = -Wall -Wextra -Iinclude
-SRC = src/main.c src/unidade-de-comprimento.c src/unidade-de-massa.c src/unidade-de-velocidade.c src/unidade-de-volume.c src/unidade-de-area.c src/unidade-de-temperatura.c src/unidade-de-tempo.c src/unidade-de-potencia.c
+SRC = src/main.c src/unidade-de-comprimento.c src/unidade-de-massa.c src/unidade-de-velocidade.c src/unidade-de-volume.c src/unidade-de-area.c src/unidade-de-temperatura.c src/unidade-de-tempo.c src/unidade-de-potencia.c src/unidade-de-informacao.c
 OBJ = $(SRC:src/%.c=build/%.o)
 OUTPUT_DIR = output
 TARGET = $(OUTPUT_DIR)/main
+
+# Detectar sistema operacional
+OS := $(shell uname -s)
 
 # Comandos compatíveis para criação e remoção de diretórios
 ifeq ($(OS), Windows_NT)
