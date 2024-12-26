@@ -44,15 +44,27 @@ O grupo é composto pelos seguintes membros:
 grupo-9-u3-tarefa-depuracao-e-versionamento/
 │
 ├── include/                     # Diretório para arquivos de cabeçalho (.h)
+│   ├── unidade-de-comprimento.h # Declarações das funções de conversão de comprimento
 │   ├── unidade-de-massa.h       # Declarações das funções de conversão de massa
 │   ├── unidade-de-volume.h      # Declarações das funções de conversão de volume
+│   ├── unidade-de-temperatura.h # Declarações das funções de conversão de temperatura
 │   ├── unidade-de-velcidade.h   # Declarações das funções de velocidade
+│   ├── unidade-de-potencia.h    # Declarações das funções de conversão de potencia
+│   ├── unidade-de-area.h        # Declarações das funções de conversão de area
+│   ├── unidade-de-tempo.h       # Declarações das funções de conversão de tempo
+│   ├── unidade-de-informação.h  # Declarações das funções de conversão de informação
 │
 ├── src/                         # Diretório para arquivos de código-fonte (.c)
 │   ├── main.c                   # Arquivo principal que contém a lógica do menu e execução
+│   ├── unidade-de-comprimento.c # Implementação das funções de conversão de comprimento
 │   ├── unidade-de-massa.c       # Implementação das funções de conversão de massa
 │   ├── unidade-de-volume.c      # Implementação das funções de conversão de volume
-|   ├── unidade-de-velocidade.c  # Implementação das funções de conversão de velocidade
+│   ├── unidade-de-temperatura.c # Implementação das funções de conversão de temperatura
+│   ├── unidade-de-velcidade.c   # Implementação das funções de velocidade
+│   ├── unidade-de-potencia.c    # Implementação das funções de conversão de potencia
+│   ├── unidade-de-area.c        # Implementação das funções de conversão de area
+│   ├── unidade-de-tempo.c       # Implementação das funções de conversão de tempo
+│   ├── unidade-de-informação.c  # Implementação das funções de conversão de informação
 │
 ├── build/                       # Diretório para arquivos objeto (.o) intermediários
 │

@@ -6,6 +6,7 @@
 #include "unidade-de-area.h"
 #include "unidade-de-temperatura.h"
 #include "unidade-de-tempo.h"
+#include "unidade-de-potencia.h"
 
 void exibirMenu();
 void limparBufferEntrada();
@@ -42,6 +43,9 @@ int main()
         case 5:
             converterVelocidade();
             break;
+        case 6:
+            converterPotencia();
+            break;
         case 7:
             converterArea();
             break;
@@ -67,6 +71,7 @@ void exibirMenu()
     printf("3. Converter Volume\n");
     printf("4. Converter Temperatura\n");
     printf("5. Converter Velocidade\n");
+    printf("6. Converter Potência\n");
     printf("7. Converter Area\n");
     printf("8. Converter Tempo\n");
     printf("0. Sair\n");
