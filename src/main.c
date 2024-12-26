@@ -5,6 +5,7 @@
 #include "unidade-de-volume.h"
 #include "unidade-de-area.h"
 #include "unidade-de-temperatura.h"
+#include "unidade-de-potencia.h"
 
 void exibirMenu();
 void limparBufferEntrada();
@@ -40,6 +41,9 @@ int main()
             break;
         case 5:
             converterVelocidade();
+            break;
+        case 6:
+            converterPotencia();
             break;
         case 7:
             converterArea();
